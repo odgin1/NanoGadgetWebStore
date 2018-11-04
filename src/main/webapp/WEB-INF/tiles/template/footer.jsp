@@ -1,0 +1,1 @@
+<p>&copy; NANO Gadget Company 2015</p>
