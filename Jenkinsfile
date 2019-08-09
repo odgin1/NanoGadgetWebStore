@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'maven:3.3.9' } }
+    agent { docker { image 'maven:3.6.1-jdk-8' } }
     stages {
         stage('build') {
             steps {
