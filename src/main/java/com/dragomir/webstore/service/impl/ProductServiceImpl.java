@@ -17,7 +17,8 @@ import com.dragomir.webstore.service.ProductService;
 public class ProductServiceImpl implements ProductService {
 
 	@Autowired
-	@Qualifier(value="productFromDB")
+//	@Qualifier(value="productFromDB")
+	@Qualifier(value="inMemoryProductRepository")
 	ProductRepository productRepository;
 
 	@Override

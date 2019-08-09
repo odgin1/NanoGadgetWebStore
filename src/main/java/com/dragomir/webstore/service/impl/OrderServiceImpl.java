@@ -15,7 +15,8 @@ import com.dragomir.webstore.service.OrderService;
 public class OrderServiceImpl implements OrderService {
 
 	@Autowired
-	@Qualifier(value="productFromDB")
+//	@Qualifier(value="productFromDB")
+	@Qualifier(value="inMemoryProductRepository")
 	private ProductRepository productRepository;
 	@Autowired
 	private OrderRepository orderRepository;

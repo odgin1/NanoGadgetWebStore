@@ -27,7 +27,7 @@ public class Test2 {
       /* output (French WinXP)
 
           getSystemDisplayName : 
-          getSystemTypeDescription : Disquette 3½ pouces
+          getSystemTypeDescription : Disquette 3D pouces
 
           getSystemDisplayName : REGA1 (C:)
           getSystemTypeDescription : Disque local
