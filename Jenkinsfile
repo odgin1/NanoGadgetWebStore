@@ -14,13 +14,13 @@ pipeline {
         }
         stage('Test') {
                 steps {
-                    sh './mvn test'
+                    sh 'mvn test'
                 }
          }
                  stage('Deploy - Staging') {
                      steps {
-                         sh './deploy staging'
-                         sh './run-smoke-tests'
+                         sh 'deploy staging'
+                         sh 'run-smoke-tests'
                      }
                  }
 
@@ -45,9 +45,9 @@ pipeline {
                     }
                     failure {
                         echo 'This will run only if failed'
-                        mail to: 'olegdragomir@gmail.com',
-                                     subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
-                                     body: "Something is wrong with ${env.BUILD_URL}"
+//                         mail to: 'olegdragomir@gmail.com',
+//                                      subject: "Failed Pipeline: ${currentBuild.fullDisplayName}",
+//                                      body: "Something is wrong with ${env.BUILD_URL}"
                     }
                     unstable {
                         echo 'This will run only if the run was marked as unstable'
